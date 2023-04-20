@@ -2,8 +2,12 @@ import dotenv from "dotenv";
 dotenv.config();
 import express from "express";
 import Stripe from "stripe";
+<<<<<<< HEAD
 import cors from "cors";
 
+=======
+import cors from 'cors';
+>>>>>>> 7a4643a6fbcce30c65443064e3ed0f5dc66ca6e4
 
 import connectDatabase from "../config/dbConnect.js";
 import { globalErrhandler, notFound } from "../middlewares/globalErrhandler.js";
@@ -87,7 +91,7 @@ app.post(
 );
 
 app.use(express.json());
-
+app.use(cors());
 //routes
 app.use("/api/v1/users/", userRoutes);
 app.use("/api/v1/products/", productRouter);
