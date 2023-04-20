@@ -2,6 +2,7 @@ import Product from "../model/Product.js";
 import asyncHandler from "express-async-handler";
 import Category from "../model/Category.js";
 import Brand from "../model/Brand.js";
+
 // @desc  Create new product
 //@route  POST /api/v1/products
 //@access Private/Admin
